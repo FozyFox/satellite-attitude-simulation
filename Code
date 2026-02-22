@@ -95,15 +95,15 @@ T = np.array([Tx, Ty, Tz])
 w = np.array([wx, wy, wz])
 q = np.array([1, 0, 0, 0])
 
-print("Initial Torque:", T)
-print("Initial Angular Velocity:", w)
-print("Initial Quaternion:", q)
-
-
 # desired quaternion (Enter Desired Quaternion)
 q_d = np.array([0.7071, 0, 0, 0.7071])
 
 desired_display_vector = get_sat_display_vector(q_d)
+
+print("Initial Torque:", T)
+print("Initial Angular Velocity:", w)
+print("Initial Quaternion:", q)
+print("Desired Quaternion:", q_d)
 
 # Simulate ----------------------------------
 
